@@ -84,7 +84,6 @@ namespace ds_project_3
                 {
                     hashClassi.bosPark += 5;
                 }
-                hashTablosu[item.Key] = hashClassi; //class tekrar hash table'a aktarılıyor
             }
             return hashTablosu;
         }
