@@ -1,63 +1,29 @@
-# Bicycle Rent System
+# Bicycle Rental Data Structures Demo
 
-## Introduction
-The **Bicycle Rent System** is a comprehensive application designed to manage bicycle rental operations efficiently. This system offers a user-friendly interface for customers to rent bicycles and for administrators to manage rentals, track inventory, and handle customer information.
+A C# console exercise for organizing bicycle stations and sample customers with a binary tree, a hash table, heap operations, and sorting helpers. Station data is embedded in `Program.cs` and customer data is generated randomly. The source and console prompts retain the original Turkish course terminology.
 
-## Features
-- **Customer Features:**
-  - Rent bicycles by hour, day, or week.
-  - Check available bicycles in real-time.
-  - View and manage rental details.
+This checkout contains a console demonstration. It has no website, payment flow, customer login, administrator dashboard, or persistent rental database.
 
-- **Administrator Features:**
-  - Add, update, or remove bicycles from inventory.
-  - Track ongoing rentals and manage customer information.
-  - Generate detailed rental reports.
+## Build and run
 
-## Installation
-To set up the project locally, follow these steps:
+Use the .NET 8 SDK or a compatible newer SDK and run from the repository root:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/tugcantopaloglu/bicycle-rent-system.git
-   ```
+```sh
+dotnet build BicycleRentDemo.csproj --configuration Release
+dotnet run --project BicycleRentDemo.csproj --configuration Release --no-build
+```
 
-2. Navigate to the project directory:
-   ```bash
-   cd bicycle-rent-system
-   ```
+Use an interactive terminal for the original console prompts and the final keypress. Randomly generated customers can produce different output across runs.
 
-## Usage
-- **Customers:**
-  - Visit the homepage to view available bicycles.
-  - Select the rental period and proceed to payment.
+## Source layout
 
-- **Administrators:**
-  - Log in to access the admin dashboard.
-  - Manage inventory and track ongoing rentals.
+- `Program.cs`: station fixtures, generated customers, and demonstration flow.
+- `Durak.cs` and `DurakAgaci.cs`: station representation and binary tree.
+- `Musteri.cs`: sample rental customer data.
+- `QuickSort.cs` and other helper files: sorting and heap demonstrations.
 
-## Future Enhancements
-- Implement user authentication for customers.
-- Add a mobile-friendly design.
-- Enable online payment integration.
-- Introduce a loyalty program for frequent renters.
+The project file builds the existing C# files without changing the exercise's types. There are no external packages or network services. Local build and sample execution do not establish inventory correctness or production rental behavior.
 
-## Contributing
-We welcome contributions! To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your feature description"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Submit a pull request.
+## Repository
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+The source repository is [basic-bicycle-rent-system-csharp](https://github.com/tugcantopaloglu/basic-bicycle-rent-system-csharp). No root license file is present in this checkout; the previous README's MIT license claim was not supported by a committed license file.
